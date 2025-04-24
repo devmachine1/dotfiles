@@ -12,7 +12,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'yegappan/lsp'
 Plug 'girishji/vimcomplete'
 Plug 'girishji/vimsuggest'
-                          
+Plug 'girishji/ngram-complete.vim'
+
 call plug#end()
 
 colorscheme gruvbox
@@ -33,7 +34,7 @@ map <leader>ff :Files<cr>
 map <leader>s :wa<cr>
 map <leader>q :qa <cr>
 map <leader>c :LspCodeAction<cr> 
-map <leader>m :FloatermNew glow<cr>
+map <leader>m :FloatermNew --height=0.9 --width=0.9  mdt %<cr>
 
 inoremap <buffer><expr> <DOWN> pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <buffer><expr> <UP>   pumvisible() ? "\<C-p>" : "\<Up>"

@@ -17,7 +17,7 @@ autoload -Uz compinit
 compinit
 
 alias l="eza -alF"
-alias v="vim"
+alias v="nvim"
 alias p="sudo pacman"
 alias e="exit"
 alias c="clear"
